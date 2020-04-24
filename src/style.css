@@ -1,0 +1,43 @@
+ #info {
+        font-family: 'Play', sans-serif;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+        background: rgba(0,128,128,0.3);/*teal*/
+	padding: 12px 10px;
+	margin-bottom: 1px; 
+	color: #fff;
+} 
+#info h1 {
+	line-height: 22px;
+	font-weight: 300;
+	font-size: 18px;
+	margin: 0;
+} 
+#info h2 {
+	line-height: 14px;
+	font-weight: 300;
+	font-size:  13px; 
+        color: rgba(0,0,128,0.8);/*navy blue*/
+	margin: 0 0 6px 0;
+} 
+#info h2 pre{
+	line-height: 14px;
+	font-weight: 300;
+	font-size:  13px; 
+        color: rgba(0,0,128,0.8);/*navy blue*/
+	margin: 0 0 6px 0;
+}
+#info a {
+	text-transform: uppercase;
+	text-decoration: none; 
+        border-bottom: 1px dotted rgba(128,0,0,0.2);
+	margin-right: 4px;
+	line-height: 20px;
+	font-size: 10px;
+        color: rgba(128,0,0,0.5);/*maroon*/
+} 
+#info a:hover {
+	border-bottom: 1px dotted rgba(128,0,0,0.6);
+	color: rgba(128,0,0,1.0);
+}
