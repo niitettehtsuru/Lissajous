@@ -1,7 +1,7 @@
 # Lissajous Curves
 Draws, rotates and then undraws(traces back the draw) lissajous curves. 
    
-<img width="400px" height="400px"  src ="img/img.jpg">
+<img width="300px" height="300px"  src ="img/img.jpg">
 
 View live demo at : https://codepen.io/niitettehtsuru/pen/ZEbeoPy
  
