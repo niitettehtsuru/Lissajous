@@ -37,24 +37,24 @@ class Lissajous
         
         this.deltaAngle = 0.5; //adjusts the rotation angle
         /*this.rotationAngle is the phase shift for the lissajous curve. 
-         *It determines the apparent "rotation" angle of the figure, viewed as if it were actually a three-dimensional curve.*/
-        this.rotationAngle  = data.rotationAngle + this.deltaAngle;//phase shift
+         *It determines the apparent "rotation" angle of the figure, viewed as if it were actually a three-dimensional curve.*/ 
+        this.rotationAngle = -Math.PI + this.deltaAngle;//phase shift
         
         this.parameter  = 0;//the parameter, (t) in the parametric equation
         
         this.xCoord = data.xCoord;//set x coordinate of the center of the curve     
         this.yCoord = data.yCoord;//set y coordinate of the center of the curve 
          
-        this.states = ['draw','rotate','undraw'];//animation states 
-        this.currentState = 0;//start from first state, which is 'draw' 
+        this.states = ['rotate','undraw','draw'];//animation states 
+        this.currentState = 0;//start from first state, which is 'rotate'  
         
         /*Controls the drawing and undrawing of the curve. 
-         *A step from this.maxStepValue  to this.minStepValue draws the curve. 
+         *A step from this.maxStepValue to this.minStepValue draws the curve. 
          *A step from this.minStepValue to this.maxStepValue  undraws the curve*/
         this.maxStepValue = 629;//700; 
         this.minStepValue = 1; 
         this.stepSize = 1; 
-        this.step = 1;  
+        this.step = this.maxStepValue;   
         
         //controls the up and down bopping of the curve
         this.maxDyValue = 50; 
